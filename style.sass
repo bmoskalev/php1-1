@@ -1,0 +1,72 @@
+body
+  margin: 0
+  padding: 0
+a
+  text-decoration: none
+  color: black
+a:hover
+  color: lightsalmon
+li
+  list-style-type: none
+ul
+  padding: 0
+
+
+.menu-block
+  margin: 50px auto
+  background-color: #E8E8E8
+.button
+  position: absolute
+  top: 0
+  left: 0
+.me
+  font-size: 18px
+  font-weight: 300
+  a
+    display: block
+    padding: 5px 20px
+
+.menu-box
+  display: flex
+  justify-content: center
+
+  &__level-1
+    margin-right: 30px
+    margin-left: 30px
+    position: relative
+    font-size: 24px
+    font-weight: 400
+    >a
+      display: block
+      padding-left: 20px
+      padding-right: 20px
+      color: black
+      border-bottom: 2px solid transparent
+
+  &__level-2
+    position: absolute
+    left: 0
+    border: 1px solid #e6e6e6
+    display: none
+
+  &__level-3
+    position: relative
+    >a
+      display: block
+
+  &__level-4
+    position: absolute
+    top: 0
+    left: 100%
+    border: 1px solid #e6e6e6
+    display: none
+
+
+.menu-box__level-1:hover >div.menu-box__level-2
+  display: block
+.menu-box__level-1:hover >a
+  border-bottom: 2px solid black
+.menu-box__level-3:hover >div.menu-box__level-4
+  display: block
+
+
